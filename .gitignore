@@ -1,0 +1,6 @@
+*.log*
+*.xlsx
+*.dwg
+*.dxf
+__pycache__/
+.pytest_cache/
