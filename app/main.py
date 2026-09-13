@@ -1,3 +1,4 @@
+from fastapi.responses import FileResponse
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 import openpyxl
@@ -6,6 +7,7 @@ import os
 import urllib.parse
 import math
 import io
+import tempfile
 import ezdxf
 from fastapi import Form, Response, FastAPI, File, UploadFile, HTTPException
 from fastapi.responses import Response, HTMLResponse, RedirectResponse, StreamingResponse
@@ -14,6 +16,7 @@ from app.schemas import AuditRequest, AuditResponse, Point2D, Point3D, WifiAPInp
 from app.engine import Engine
 from app.report_builder import generate_html_report
 from app.geometry_parser import GeometryParser
+from app.geometry_export import build_geometry_export
 
 app = FastAPI(
     title="ELV CAD-Auditor API",
@@ -22,10 +25,6 @@ app = FastAPI(
     docs_url="/docs",
     redoc_url="/redoc"
 )
-
-@app.get("/", include_in_schema=False)
-def root():
-    return RedirectResponse(url="/docs")
 
 def process_audit(req: AuditRequest):
     all_issues = []
@@ -115,6 +114,40 @@ async def audit_dxf_file(file: UploadFile = File(...)):
         "total_area_sqm": round(sum(r["area_sqm"] for r in rooms), 2),
         "rooms": rooms_summary
     }
+
+
+@app.post("/api/v1/geometry/extract", tags=["CAD"])
+async def extract_geometry_export(
+    file: UploadFile = File(...),
+    project_name: str = Form("Проект"),
+):
+    """Return a standalone geometry.v2 export without changing saved projects."""
+    filename = file.filename or "drawing.dxf"
+    extension = os.path.splitext(filename)[1].lower()
+    if extension not in {".dxf", ".dwg"}:
+        raise HTTPException(status_code=400, detail="Поддерживаются только файлы .dxf и .dwg")
+
+    payload = await file.read(25 * 1024 * 1024 + 1)
+    if len(payload) > 25 * 1024 * 1024:
+        raise HTTPException(status_code=413, detail="Файл больше 25 МБ")
+    if extension == ".dwg":
+        try:
+            payload = CADConverter.convert_dwg_to_dxf(payload, filename)
+        except Exception as error:
+            raise HTTPException(status_code=503, detail=f"Ошибка конвертации DWG: {error}") from error
+
+    temporary_path = None
+    try:
+        with tempfile.NamedTemporaryFile(suffix=".dxf", delete=False) as temporary:
+            temporary.write(payload)
+            temporary_path = temporary.name
+        document = ezdxf.readfile(temporary_path)
+        return build_geometry_export(document, filename, project_name)
+    except (OSError, ezdxf.DXFError, UnicodeError) as error:
+        raise HTTPException(status_code=422, detail=f"Не удалось прочитать CAD-файл: {error}") from error
+    finally:
+        if temporary_path and os.path.exists(temporary_path):
+            os.remove(temporary_path)
 
 @app.post("/api/v1/audit/excel", tags=["Reports"])
 def audit_project_excel(req: AuditRequest):
@@ -461,3 +494,8 @@ def generate_bom_excel(project_name: str, client_name: str, bom_items: list) -> 
     wb.save(output)
     output.seek(0)
     return output
+
+
+@app.get("/", include_in_schema=False)
+async def serve_dashboard():
+    return FileResponse("app/static/index.html")
