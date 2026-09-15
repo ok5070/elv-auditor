@@ -120,6 +120,7 @@ async def audit_dxf_file(file: UploadFile = File(...)):
 async def extract_geometry_export(
     file: UploadFile = File(...),
     project_name: str = Form("Проект"),
+    k: float = Form(0.1),
 ):
     """Return a standalone geometry.v2 export without changing saved projects."""
     filename = file.filename or "drawing.dxf"
@@ -127,9 +128,9 @@ async def extract_geometry_export(
     if extension not in {".dxf", ".dwg"}:
         raise HTTPException(status_code=400, detail="Поддерживаются только файлы .dxf и .dwg")
 
-    payload = await file.read(25 * 1024 * 1024 + 1)
-    if len(payload) > 25 * 1024 * 1024:
-        raise HTTPException(status_code=413, detail="Файл больше 25 МБ")
+    payload = await file.read(200 * 1024 * 1024 + 1)
+    if len(payload) > 200 * 1024 * 1024:
+        raise HTTPException(status_code=413, detail="Файл больше 200 МБ")
     if extension == ".dwg":
         try:
             payload = CADConverter.convert_dwg_to_dxf(payload, filename)
@@ -142,7 +143,7 @@ async def extract_geometry_export(
             temporary.write(payload)
             temporary_path = temporary.name
         document = ezdxf.readfile(temporary_path)
-        return build_geometry_export(document, filename, project_name)
+        return build_geometry_export(document, filename, project_name, k)
     except (OSError, ezdxf.DXFError, UnicodeError) as error:
         raise HTTPException(status_code=422, detail=f"Не удалось прочитать CAD-файл: {error}") from error
     finally:

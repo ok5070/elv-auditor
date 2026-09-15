@@ -8,11 +8,15 @@ import ezdxf
 from shapely.geometry import LineString
 
 from app.geometry_parser import GeometryParser
+from app.services.wall_consolidator import ConsolidationParams, WallConsolidator
 
 
 ARCHITECTURE_TOKENS = (
     "WALL", "СТЕН", "ПЕРЕГОРОД", "A-", "АР_", "АРХИТЕКТ", "ПЛАН",
 )
+PARTITION_TOKENS = ("PARTITION", "ПЕРЕГОРОД", "P-WALL")
+GENERIC_PLAN_LAYERS = {"PLAN", "ПЛАН"}
+GENERIC_PLAN_MIN_LINEWEIGHT = 25
 
 
 def _layer_matches(layer: str, tokens: tuple[str, ...]) -> bool:
@@ -20,12 +24,26 @@ def _layer_matches(layer: str, tokens: tuple[str, ...]) -> bool:
     return any(token in value for token in tokens)
 
 
+def _effective_lineweight(document: ezdxf.document.Drawing, entity: Any) -> int:
+    lineweight = int(entity.dxf.get("lineweight", -1))
+    if lineweight >= 0:
+        return lineweight
+    try:
+        return int(document.layers.get(str(entity.dxf.get("layer", "0"))).dxf.get("lineweight", -1))
+    except Exception:
+        return -1
+
+
 def _wall_items(document: ezdxf.document.Drawing) -> tuple[list[dict[str, Any]], list[LineString]]:
     walls: list[dict[str, Any]] = []
     segments: list[LineString] = []
     for entity_index, entity in enumerate(document.modelspace(), 1):
         layer = str(entity.dxf.get("layer", "0"))
-        if not _layer_matches(layer, ARCHITECTURE_TOKENS):
+        generic_plan_layer = layer.upper() in GENERIC_PLAN_LAYERS
+        if not generic_plan_layer and not _layer_matches(layer, ARCHITECTURE_TOKENS):
+            continue
+        lineweight = _effective_lineweight(document, entity)
+        if generic_plan_layer and lineweight < GENERIC_PLAN_MIN_LINEWEIGHT:
             continue
         points: list[tuple[float, float]] = []
         if entity.dxftype() == "LINE":
@@ -44,18 +62,65 @@ def _wall_items(document: ezdxf.document.Drawing) -> tuple[list[dict[str, Any]],
             if start == end:
                 continue
             segments.append(LineString([start, end]))
+            wall_type = "partition" if _layer_matches(layer, PARTITION_TOKENS) else "wall"
             walls.append({
                 "id": f"W-{entity_index:04d}-{segment_index:02d}",
-                "type": "wall",
+                "type": wall_type,
                 "x1": round(start[0], 3),
                 "y1": round(start[1], 3),
                 "x2": round(end[0], 3),
                 "y2": round(end[1], 3),
-                "thickness": 13.0,
+                "thickness": 7.0 if wall_type == "partition" else 13.0,
                 "layer": layer,
                 "source": "dxf",
+                "confidence": "generic_plan_lineweight" if generic_plan_layer else "explicit_architecture_layer",
             })
     return walls, segments
+
+
+def _consolidate_wall_items(
+    wall_items: list[dict[str, Any]],
+    k: float,
+) -> tuple[list[dict[str, Any]], dict[str, int | float]]:
+    buckets: dict[tuple[str, float, str, str], list[tuple[tuple[float, float], tuple[float, float]]]] = {}
+    for wall in wall_items:
+        key = (
+            str(wall["type"]),
+            float(wall["thickness"]),
+            str(wall["layer"]),
+            str(wall["confidence"]),
+        )
+        buckets.setdefault(key, []).append(
+            ((float(wall["x1"]), float(wall["y1"])), (float(wall["x2"]), float(wall["y2"])))
+        )
+
+    result_items: list[dict[str, Any]] = []
+    protected_openings = 0
+    merge_operations = 0
+    for (wall_type, thickness, layer, confidence), segments in buckets.items():
+        result = WallConsolidator(ConsolidationParams(k=k)).run_dry_run(segments)
+        protected_openings += result.metrics.protected_openings_count
+        merge_operations += result.metrics.merge_operations_count
+        for point_a, point_b in result.consolidated_segments_cad:
+            result_items.append({
+                "id": f"W-{len(result_items) + 1:04d}",
+                "type": wall_type,
+                "x1": round(point_a[0], 3),
+                "y1": round(point_a[1], 3),
+                "x2": round(point_b[0], 3),
+                "y2": round(point_b[1], 3),
+                "thickness": thickness,
+                "layer": layer,
+                "source": "dxf_consolidated",
+                "confidence": confidence,
+            })
+
+    return result_items, {
+        "raw_candidates": len(wall_items),
+        "final_candidates": len(result_items),
+        "merge_operations": merge_operations,
+        "protected_openings": protected_openings,
+    }
 
 
 def _block_text_point(document: ezdxf.document.Drawing, block_name: str) -> tuple[float, float] | None:
@@ -135,8 +200,25 @@ def _devices(document: ezdxf.document.Drawing) -> list[dict[str, Any]]:
     return devices
 
 
-def build_geometry_export(document: ezdxf.document.Drawing, source: str, project_name: str = "Проект") -> dict[str, Any]:
-    walls, segments = _wall_items(document)
+def build_geometry_export(
+    document: ezdxf.document.Drawing,
+    source: str,
+    project_name: str = "Проект",
+    k: float | None = None,
+) -> dict[str, Any]:
+    raw_walls, segments = _wall_items(document)
+    walls = raw_walls
+    wall_detection: dict[str, Any] = {
+        "mode": "explicit_layers_or_generic_plan_lineweight",
+        "generic_plan_min_lineweight": GENERIC_PLAN_MIN_LINEWEIGHT,
+        "raw_candidates": len(raw_walls),
+        "final_candidates": len(raw_walls),
+        "consolidated": False,
+    }
+    if k is not None and k > 0:
+        walls, metrics = _consolidate_wall_items(raw_walls, k)
+        wall_detection.update(metrics)
+        wall_detection["consolidated"] = True
     rooms = []
     generic_plan_layer = any(item["layer"].upper() == "ПЛАН" for item in walls)
     if not generic_plan_layer:
@@ -174,9 +256,74 @@ def build_geometry_export(document: ezdxf.document.Drawing, source: str, project
         "metadata": {
             "project": project_name,
             "source": source,
+            "k": k,
             "coordinate_system": "source_cad",
             "origin": {"x": round(min_x, 3), "y": round(min_y, 3)},
             "manual_review_required": True,
             "rooms_detection": "disabled_generic_plan_layer" if generic_plan_layer else "polygonize",
+            "wall_detection": wall_detection,
+        },
+    }
+
+
+def adapt_room_plan_geometry(
+    editor_payload: dict[str, Any],
+    params: ConsolidationParams | None = None,
+) -> dict[str, Any]:
+    """Adapt Room Plan Editor walls to the existing geometry.v2 contract.
+
+    The input payload is only read.  Wall consolidation is run independently
+    for each existing ``(type, thickness)`` group so walls and partitions are
+    never merged with one another.
+    """
+    consolidation_params = params or ConsolidationParams()
+    raw_walls = editor_payload.get("walls", [])
+    buckets: dict[tuple[str, float], list[tuple[tuple[float, float], tuple[float, float]]]] = {}
+
+    for wall in raw_walls:
+        wall_type = str(wall.get("type", "wall"))
+        thickness = float(wall.get("thickness", 0.0))
+        segment = (
+            (float(wall["x1"]), float(wall["y1"])),
+            (float(wall["x2"]), float(wall["y2"])),
+        )
+        buckets.setdefault((wall_type, thickness), []).append(segment)
+
+    consolidated_walls: list[dict[str, Any]] = []
+    wall_counter = 1
+    for (wall_type, thickness), segments in buckets.items():
+        result = WallConsolidator(consolidation_params).run_dry_run(segments)
+        for (p1, p2) in result.consolidated_segments_cad:
+            consolidated_walls.append({
+                "id": f"W-{wall_counter:04d}",
+                "type": wall_type,
+                "x1": round(p1[0], 3),
+                "y1": round(p1[1], 3),
+                "x2": round(p2[0], 3),
+                "y2": round(p2[1], 3),
+                "thickness": thickness,
+                "source": "room-plan-editor",
+            })
+            wall_counter += 1
+
+    canvas = editor_payload.get("canvas", {})
+    return {
+        "version": 2,
+        "schema_version": "2.0",
+        "canvas": {
+            "width": float(canvas.get("width", 0.0)),
+            "height": float(canvas.get("height", 0.0)),
+        },
+        "walls": consolidated_walls,
+        "doors": [dict(door) for door in editor_payload.get("doors", [])],
+        "windows": [dict(window) for window in editor_payload.get("windows", [])],
+        "rooms": [],
+        "devices": [],
+        "cable_routes": [],
+        "metadata": {
+            "source": "room-plan-editor",
+            "coordinate_system": "editor_canvas",
+            "manual_review_required": True,
+            "consolidated": True,
         },
     }
