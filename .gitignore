@@ -1,6 +1,61 @@
-*.log*
-*.xlsx
-*.dwg
-*.dxf
+```
+# Compiled and build artifacts
+*.pyc
 __pycache__/
+
+# Dependencies
+.venv/
+venv/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# Build outputs
+dist/
+build/
+target/
+*.o
+*.obj
+*.out
+
+# Python specific
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.Python
+*.pot
+*.po
+*~
 .pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+.directory
+.Trashes
+*.nib
+*~
+.DS_Store?
+._*
+.Spotlight-V100
+.Trash-*
+ehthumbs.db
+Thumbs.db
+```
