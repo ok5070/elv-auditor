@@ -1,16 +1,15 @@
 ```
-# Compiled and build artifacts
-*.pyc
+# Python
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Dependencies
-.venv/
-venv/
+# Compressed files
+*.zip
 
-# Logs and temp files
+# Logs
 *.log
-*.tmp
-*.swp
 
 # Environment
 .env
@@ -21,41 +20,33 @@ venv/
 .vscode/
 .idea/
 
-# Build outputs
+# Dependencies
+.venv/
+venv/
+node_modules/
+
+# Build artifacts
 dist/
 build/
 target/
-*.o
-*.obj
-*.out
 
-# Python specific
-*.pyo
-*.pyd
-*.so
-*.egg-info/
-.Python
-*.pot
-*.po
-*~
-.pytest_cache/
-.mypy_cache/
+# Coverage
 .coverage
+coverage/
 htmlcov/
 
-# OS generated files
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# OS specific
 .DS_Store
 Thumbs.db
-ehthumbs.db
-Icon?
-.directory
-.Trashes
-*.nib
-*~
-.DS_Store?
-._*
-.Spotlight-V100
-.Trash-*
-ehthumbs.db
-Thumbs.db
+
+# MyPy
+.mypy_cache/
+
+# Pytest
+.pytest_cache/
 ```
