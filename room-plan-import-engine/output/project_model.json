@@ -1,0 +1,4712 @@
+{
+  "meta": {
+    "name": "(9)_ХИКВ.0001-СОТ.СР3_Третий этаж. Схема расположения оборудования и прокладки кабельных трасс (1)",
+    "floor": "3 этаж",
+    "version": "1.0",
+    "source": "dxf_import"
+  },
+  "data": {
+    "walls": [
+      {
+        "id": "5cd44f34-79b0-426e-ab04-bab9acbb86aa",
+        "start": {
+          "x": 153.331,
+          "y": 228.997
+        },
+        "end": {
+          "x": 227.331,
+          "y": 228.997
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "f126e47d-691f-4a67-967a-e74449256d61",
+        "start": {
+          "x": 282.381,
+          "y": 228.997
+        },
+        "end": {
+          "x": 355.831,
+          "y": 228.997
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "83cf142f-15db-41c0-8817-ef511189c8cf",
+        "start": {
+          "x": 158.781,
+          "y": 382.497
+        },
+        "end": {
+          "x": 225.281,
+          "y": 382.497
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "bd9aa30f-cd58-489b-8464-022cc888058d",
+        "start": {
+          "x": 279.781,
+          "y": 382.497
+        },
+        "end": {
+          "x": 353.581,
+          "y": 382.497
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "a0d4c1ce-c863-47d7-9e24-2764d1763efd",
+        "start": {
+          "x": 158.781,
+          "y": 375.597
+        },
+        "end": {
+          "x": 225.281,
+          "y": 375.597
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "275c8d81-52ef-436f-b806-78f9bb6b161a",
+        "start": {
+          "x": 279.781,
+          "y": 375.597
+        },
+        "end": {
+          "x": 353.581,
+          "y": 375.597
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "71c7aabc-806c-439f-a591-2b2155711071",
+        "start": {
+          "x": 153.331,
+          "y": 234.497
+        },
+        "end": {
+          "x": 227.331,
+          "y": 234.497
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "8e7a1c85-7836-4154-949a-50d7cff6af04",
+        "start": {
+          "x": 282.381,
+          "y": 234.497
+        },
+        "end": {
+          "x": 355.831,
+          "y": 234.497
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "ef48791b-31a8-47ad-abd0-b617b69e33f3",
+        "start": {
+          "x": 221.781,
+          "y": 316.497
+        },
+        "end": {
+          "x": 281.856,
+          "y": 316.497
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "b1699d4b-1a2d-4034-89dd-aa749d39e4ce",
+        "start": {
+          "x": 290.856,
+          "y": 316.497
+        },
+        "end": {
+          "x": 343.456,
+          "y": 316.497
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "4a34cb37-c40a-475f-8f8b-7d000e1cd812",
+        "start": {
+          "x": 221.781,
+          "y": 320.697
+        },
+        "end": {
+          "x": 281.856,
+          "y": 320.697
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "5a1aee46-684d-44a7-9794-6edfa6838a01",
+        "start": {
+          "x": 290.856,
+          "y": 320.697
+        },
+        "end": {
+          "x": 343.456,
+          "y": 320.697
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "cee0dc09-a7d3-47e8-a23b-36591f7bc957",
+        "start": {
+          "x": 405.831,
+          "y": 320.697
+        },
+        "end": {
+          "x": 405.831,
+          "y": 375.597
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "fa143c01-d8b5-42a5-a7d5-937d4c145c6b",
+        "start": {
+          "x": 409.731,
+          "y": 376.697
+        },
+        "end": {
+          "x": 409.731,
+          "y": 320.697
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "2d113a50-7a0a-4615-ac49-266016353803",
+        "start": {
+          "x": 442.931,
+          "y": 402.748
+        },
+        "end": {
+          "x": 442.931,
+          "y": 314.758
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "3f011fa9-4129-4d9e-9838-a0b2fb8ca0bd",
+        "start": {
+          "x": 442.931,
+          "y": 299.758
+        },
+        "end": {
+          "x": 442.931,
+          "y": 213.597
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "41626ff7-258b-47d0-9440-b25b7504c1e6",
+        "start": {
+          "x": 438.081,
+          "y": 376.697
+        },
+        "end": {
+          "x": 438.081,
+          "y": 320.697
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "e2c5af61-09cd-4c35-91eb-da5132925f70",
+        "start": {
+          "x": 438.081,
+          "y": 290.797
+        },
+        "end": {
+          "x": 438.081,
+          "y": 234.497
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "5c17b8ee-5c5f-43d3-aaee-d0485fe0cb56",
+        "start": {
+          "x": 164.481,
+          "y": 294.997
+        },
+        "end": {
+          "x": 217.231,
+          "y": 294.997
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "fb45d61e-d91c-4e62-adda-e11440bb3a80",
+        "start": {
+          "x": 226.231,
+          "y": 294.997
+        },
+        "end": {
+          "x": 283.631,
+          "y": 294.997
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "91fff67d-f0de-45e6-b46e-a3c610ef2906",
+        "start": {
+          "x": 349.231,
+          "y": 294.997
+        },
+        "end": {
+          "x": 407.689,
+          "y": 294.997
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "e9452347-2b33-468b-afe8-40d0015ed82b",
+        "start": {
+          "x": 164.481,
+          "y": 290.797
+        },
+        "end": {
+          "x": 217.231,
+          "y": 290.797
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "b8b18a42-c2ab-40fd-b7eb-a8f140a53301",
+        "start": {
+          "x": 226.231,
+          "y": 290.797
+        },
+        "end": {
+          "x": 283.631,
+          "y": 290.797
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "30e83a66-3c8b-4986-afb3-72e4be8fc88b",
+        "start": {
+          "x": 158.781,
+          "y": 320.697
+        },
+        "end": {
+          "x": 158.781,
+          "y": 375.597
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "758e49af-da24-44a6-b94a-862d484a4773",
+        "start": {
+          "x": 154.881,
+          "y": 402.797
+        },
+        "end": {
+          "x": 154.881,
+          "y": 320.697
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "66425114-e634-4ad2-ae70-f03cdfec035e",
+        "start": {
+          "x": 126.881,
+          "y": 402.797
+        },
+        "end": {
+          "x": 126.881,
+          "y": 320.697
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "5f490d4c-95f7-4d93-935f-f43ae213fbbd",
+        "start": {
+          "x": 126.881,
+          "y": 290.797
+        },
+        "end": {
+          "x": 126.881,
+          "y": 234.497
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "047a2212-99bb-456a-af8b-281987945c25",
+        "start": {
+          "x": 121.681,
+          "y": 402.797
+        },
+        "end": {
+          "x": 121.681,
+          "y": 339.652
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "1c4efeb4-d7c0-48b3-9ed3-e2e421334acc",
+        "start": {
+          "x": 158.781,
+          "y": 394.897
+        },
+        "end": {
+          "x": 405.831,
+          "y": 394.897
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "351e700f-69af-46b3-9081-f53b94a7164a",
+        "start": {
+          "x": 380.231,
+          "y": 375.597
+        },
+        "end": {
+          "x": 380.231,
+          "y": 320.697
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "2c2cf32c-01c6-43f5-95ab-cc1a59b326a0",
+        "start": {
+          "x": 378.981,
+          "y": 375.597
+        },
+        "end": {
+          "x": 378.981,
+          "y": 320.697
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "a9c44156-4f67-4781-836c-a765e464589e",
+        "start": {
+          "x": 318.806,
+          "y": 375.597
+        },
+        "end": {
+          "x": 318.806,
+          "y": 320.697
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "37ec8e88-fbda-4cd1-9c46-76308a8719cd",
+        "start": {
+          "x": 315.506,
+          "y": 375.597
+        },
+        "end": {
+          "x": 315.506,
+          "y": 320.697
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "43df5347-ae88-4917-a87c-4271179ae6d3",
+        "start": {
+          "x": 252.131,
+          "y": 375.597
+        },
+        "end": {
+          "x": 252.131,
+          "y": 320.697
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "7e22210a-4d8b-4a56-833a-27802de0b1f2",
+        "start": {
+          "x": 253.381,
+          "y": 375.597
+        },
+        "end": {
+          "x": 253.381,
+          "y": 320.697
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "2beb1661-2d6b-4fb6-adab-26207dc04fee",
+        "start": {
+          "x": 188.081,
+          "y": 375.597
+        },
+        "end": {
+          "x": 188.081,
+          "y": 320.697
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "03fda86c-aac6-430e-9019-f208992abbda",
+        "start": {
+          "x": 190.231,
+          "y": 375.597
+        },
+        "end": {
+          "x": 190.231,
+          "y": 320.697
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "c705b608-31b8-41f3-9e39-147e9cbc9929",
+        "start": {
+          "x": 127.981,
+          "y": 214.797
+        },
+        "end": {
+          "x": 438.081,
+          "y": 214.797
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "f2263bc4-cae9-49a4-8d8d-c1ef10bb536f",
+        "start": {
+          "x": 320.781,
+          "y": 234.497
+        },
+        "end": {
+          "x": 320.781,
+          "y": 290.797
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "dad7df56-a80b-4111-b453-63552c017d45",
+        "start": {
+          "x": 317.481,
+          "y": 234.497
+        },
+        "end": {
+          "x": 317.481,
+          "y": 290.797
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "aee19e13-a989-49b4-bba9-b34ee67e9cea",
+        "start": {
+          "x": 255.506,
+          "y": 234.497
+        },
+        "end": {
+          "x": 255.506,
+          "y": 290.797
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "ac839fc2-5561-4893-a9f9-1fbabb12791b",
+        "start": {
+          "x": 254.256,
+          "y": 234.497
+        },
+        "end": {
+          "x": 254.256,
+          "y": 290.797
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "1b33600b-3018-4c43-9f35-c61d5f1d22c7",
+        "start": {
+          "x": 192.431,
+          "y": 234.497
+        },
+        "end": {
+          "x": 192.431,
+          "y": 290.797
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "9cec2221-5714-4710-87c6-7cafe634725e",
+        "start": {
+          "x": 189.131,
+          "y": 234.497
+        },
+        "end": {
+          "x": 189.131,
+          "y": 290.797
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "c0c1edcb-8dfe-4ba8-ae9c-a714b3ce3852",
+        "start": {
+          "x": 378.831,
+          "y": 234.497
+        },
+        "end": {
+          "x": 378.831,
+          "y": 290.797
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "4009010c-5187-4ceb-a0cc-fff21ebafae9",
+        "start": {
+          "x": 384.331,
+          "y": 290.797
+        },
+        "end": {
+          "x": 384.331,
+          "y": 234.497
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "2d72d23a-a860-4181-829d-0efd91a9bf0c",
+        "start": {
+          "x": 451.931,
+          "y": 317.185
+        },
+        "end": {
+          "x": 537.084,
+          "y": 317.185
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "8e224f4a-b3ac-418d-b2df-9051038e3c45",
+        "start": {
+          "x": 450.931,
+          "y": 316.185
+        },
+        "end": {
+          "x": 537.849,
+          "y": 316.185
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "a5a3977e-29d0-46e6-a659-952bc933c8a4",
+        "start": {
+          "x": 460.05,
+          "y": 295.243
+        },
+        "end": {
+          "x": 532.152,
+          "y": 295.243
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "710cfe92-90b2-434f-b221-472b9a163c53",
+        "start": {
+          "x": 460.05,
+          "y": 294.243
+        },
+        "end": {
+          "x": 530.844,
+          "y": 294.243
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "fbe9ee6a-551f-4fa4-a617-e0daaa24ae92",
+        "start": {
+          "x": 464.484,
+          "y": 289.241
+        },
+        "end": {
+          "x": 529.484,
+          "y": 289.241
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "e07e18c6-1104-4398-9207-796f13972f6f",
+        "start": {
+          "x": 464.212,
+          "y": 288.241
+        },
+        "end": {
+          "x": 529.212,
+          "y": 288.241
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "a2b8a039-0b06-460f-ad17-1e521507b83c",
+        "start": {
+          "x": 472.213,
+          "y": 322.186
+        },
+        "end": {
+          "x": 538.444,
+          "y": 322.186
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "f916c129-f71b-4703-862c-0a574a5c0900",
+        "start": {
+          "x": 538.716,
+          "y": 323.186
+        },
+        "end": {
+          "x": 472.213,
+          "y": 323.186
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "1234638d-70f2-4af3-911c-16803a52309a",
+        "start": {
+          "x": 499.1,
+          "y": 230.113
+        },
+        "end": {
+          "x": 442.944,
+          "y": 245.387
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "2b98fa7b-680d-43f9-814c-6794d28a5065",
+        "start": {
+          "x": 571.181,
+          "y": 210.507
+        },
+        "end": {
+          "x": 588.32,
+          "y": 273.518
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "788d073a-e9ab-42ab-b9dd-e77b090aba18",
+        "start": {
+          "x": 600.327,
+          "y": 317.664
+        },
+        "end": {
+          "x": 635.142,
+          "y": 445.663
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "0ce0df63-41f9-4df7-abdc-832d04a41a51",
+        "start": {
+          "x": 635.142,
+          "y": 445.663
+        },
+        "end": {
+          "x": 546.901,
+          "y": 469.677
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "12ec6030-a870-4a9a-9f3b-aadadacc4b80",
+        "start": {
+          "x": 546.898,
+          "y": 469.665
+        },
+        "end": {
+          "x": 448.619,
+          "y": 496.397
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "04016d29-bc17-4b24-8ee8-627fa3585cbd",
+        "start": {
+          "x": 448.356,
+          "y": 495.432
+        },
+        "end": {
+          "x": 424.763,
+          "y": 408.689
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "72c5de6e-6a50-44f7-bbc9-4d9a01f7f05d",
+        "start": {
+          "x": 571.673,
+          "y": 209.648
+        },
+        "end": {
+          "x": 588.995,
+          "y": 273.334
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "aa8b8e5c-667e-4b94-ae1a-f725f64eef1a",
+        "start": {
+          "x": 601.003,
+          "y": 317.48
+        },
+        "end": {
+          "x": 636.002,
+          "y": 446.155
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "94028a7f-6c7a-423f-bbb1-b0709ab933d9",
+        "start": {
+          "x": 636.002,
+          "y": 446.155
+        },
+        "end": {
+          "x": 547.082,
+          "y": 470.341
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "ce83b956-5eb8-4e23-8992-0473b28b0893",
+        "start": {
+          "x": 547.082,
+          "y": 470.341
+        },
+        "end": {
+          "x": 448.127,
+          "y": 497.256
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "d5c05555-148f-4a51-b064-e8893f572e0a",
+        "start": {
+          "x": 448.127,
+          "y": 497.256
+        },
+        "end": {
+          "x": 424.087,
+          "y": 408.873
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "a66e646b-f18f-4da7-9733-6eff7a1d906d",
+        "start": {
+          "x": 685.288,
+          "y": 461.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 461.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "a52e5bf1-215e-4217-85a7-44cdf114813a",
+        "start": {
+          "x": 685.288,
+          "y": 453.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 453.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "257367c4-fe50-4499-8568-72ccad9c7305",
+        "start": {
+          "x": 685.288,
+          "y": 445.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 445.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "b4b1899f-fe8f-4c37-b9ba-111de62a3afc",
+        "start": {
+          "x": 685.288,
+          "y": 437.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 437.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "0087b0e6-9f63-4e44-899e-ebda23096079",
+        "start": {
+          "x": 685.288,
+          "y": 429.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 429.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "a3b1b01b-7c97-4d20-9cc2-2c21ff8b7e3b",
+        "start": {
+          "x": 685.288,
+          "y": 421.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 421.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "725fad01-e8de-4ef1-8fe0-6f14a2d8522b",
+        "start": {
+          "x": 685.288,
+          "y": 421.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 421.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "0a2d0e52-c4f6-46b6-8016-8ccc49586666",
+        "start": {
+          "x": 685.288,
+          "y": 413.021
+        },
+        "end": {
+          "x": 804.324,
+          "y": 413.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "17bd3e14-eb93-4a4b-8ec2-4175ca6b9841",
+        "start": {
+          "x": 685.288,
+          "y": 413.021
+        },
+        "end": {
+          "x": 804.324,
+          "y": 413.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "0c52cc06-1ff4-4025-9ba2-3f2ec4f30b7f",
+        "start": {
+          "x": 685.288,
+          "y": 461.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 461.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "a457c33a-e8b1-4a92-b7ea-aa88d412dcfc",
+        "start": {
+          "x": 784.324,
+          "y": 481.04
+        },
+        "end": {
+          "x": 784.324,
+          "y": 229.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "e991d60d-46d2-4beb-86b0-a8c15d67efbd",
+        "start": {
+          "x": 685.288,
+          "y": 413.021
+        },
+        "end": {
+          "x": 804.324,
+          "y": 413.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "95cf64ac-0061-4006-a000-4107b2a1b2b3",
+        "start": {
+          "x": 685.288,
+          "y": 413.021
+        },
+        "end": {
+          "x": 804.324,
+          "y": 413.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "dc9a55f9-7f3f-4d4f-bba9-4b0425b3c840",
+        "start": {
+          "x": 685.288,
+          "y": 405.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 405.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "8cf03f57-e012-4435-bd82-a350eee2df52",
+        "start": {
+          "x": 685.288,
+          "y": 405.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 405.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "3e1bd92c-08af-4333-b7cf-24cd2849af74",
+        "start": {
+          "x": 685.288,
+          "y": 405.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 405.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "019b01c4-5058-4257-b346-e0c354307953",
+        "start": {
+          "x": 685.288,
+          "y": 405.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 405.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "a9080892-7986-4ce1-acc3-905a3592688f",
+        "start": {
+          "x": 685.288,
+          "y": 405.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 405.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "46c3931e-00ed-4a7d-9933-2b111ea494b5",
+        "start": {
+          "x": 685.288,
+          "y": 397.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 397.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "2238a057-8a7a-4805-a560-a776aa798488",
+        "start": {
+          "x": 685.288,
+          "y": 397.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 397.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "297e8663-42ea-4b66-9411-d3ff75a3ddb8",
+        "start": {
+          "x": 685.288,
+          "y": 389.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 389.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "9734034c-4904-41d8-aa9a-c0402397c04d",
+        "start": {
+          "x": 685.288,
+          "y": 389.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 389.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "52e2902a-abef-4f8c-8640-a66ba5e70de0",
+        "start": {
+          "x": 685.288,
+          "y": 389.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 389.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "e7533d3e-b11d-4d2a-b502-0ce6d6f571ed",
+        "start": {
+          "x": 685.288,
+          "y": 389.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 389.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "8d4add75-a386-411c-abe9-1107d168da6a",
+        "start": {
+          "x": 685.288,
+          "y": 381.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 381.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "f3949e89-6aba-45ce-9313-1fd14adca17d",
+        "start": {
+          "x": 685.288,
+          "y": 381.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 381.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "81b592f2-1964-4d0d-8816-3f2286fecda4",
+        "start": {
+          "x": 685.288,
+          "y": 381.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 381.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "8690ecec-1aaf-4628-8113-9102fae33836",
+        "start": {
+          "x": 685.288,
+          "y": 381.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 381.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "3163a75f-1143-45ef-bcf6-c3a5cef3b273",
+        "start": {
+          "x": 685.288,
+          "y": 381.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 381.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "d699c475-a9c1-48ad-a6b9-c39853063654",
+        "start": {
+          "x": 685.288,
+          "y": 381.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 381.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "556d3f01-01f6-448e-bac2-33730670c8d7",
+        "start": {
+          "x": 685.288,
+          "y": 373.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 373.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "97d941df-8898-4380-8e6b-64974ba121b5",
+        "start": {
+          "x": 685.288,
+          "y": 373.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 373.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "913edbfb-19f7-486a-9218-e17eed6a5a3b",
+        "start": {
+          "x": 685.288,
+          "y": 365.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 365.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "3d2db914-85f9-4d6a-a5f0-e4593ab2d97e",
+        "start": {
+          "x": 685.288,
+          "y": 365.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 365.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "1855efe7-dcc6-4640-934d-072bf1feff44",
+        "start": {
+          "x": 685.288,
+          "y": 365.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 365.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "3e3cff5f-d48a-4ce5-990a-cf2682a4b7de",
+        "start": {
+          "x": 685.288,
+          "y": 365.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 365.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "3165d331-7436-4c51-b4f8-6300ab8bfd8f",
+        "start": {
+          "x": 685.288,
+          "y": 357.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 357.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "f4c49db1-b354-4308-895f-f56302b2731f",
+        "start": {
+          "x": 685.288,
+          "y": 357.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 357.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "13d6e7f6-46dc-4635-b9f4-cc6f608ea82d",
+        "start": {
+          "x": 685.288,
+          "y": 357.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 357.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "2b04c183-b1a8-40da-ae92-0b4967be04df",
+        "start": {
+          "x": 685.288,
+          "y": 357.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 357.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "643513ea-d9e2-41a2-ab64-4ebdbc4acea2",
+        "start": {
+          "x": 685.288,
+          "y": 357.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 357.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "b2a90819-b5dd-48a9-a2e9-ce19a1ddeb2e",
+        "start": {
+          "x": 685.288,
+          "y": 349.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 349.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "51eef43f-14a3-42f5-b0b3-9f9015c86dfa",
+        "start": {
+          "x": 685.288,
+          "y": 349.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 349.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "dcc3ec21-e73e-4feb-ae6b-e78bdb1a71b5",
+        "start": {
+          "x": 685.288,
+          "y": 341.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 341.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "370908a0-1486-4b2b-95d0-7c3469368431",
+        "start": {
+          "x": 685.288,
+          "y": 341.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 341.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "a391808f-a4a2-4341-a8f6-6bd4d09ca1af",
+        "start": {
+          "x": 685.288,
+          "y": 341.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 341.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "f3fe5783-26aa-4ede-96ca-d1b9a879124c",
+        "start": {
+          "x": 685.288,
+          "y": 341.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 341.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "a85d5e5c-e278-42fa-bf6e-5f672de03106",
+        "start": {
+          "x": 685.288,
+          "y": 333.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 333.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "32f551bd-70cf-4203-8410-6b9e0b35a31c",
+        "start": {
+          "x": 685.288,
+          "y": 333.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 333.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "9f6d8283-6abe-415c-993d-61e5e965d5bf",
+        "start": {
+          "x": 685.288,
+          "y": 333.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 333.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "8b8c0830-5a4b-47a7-ac09-93cfe258dcb0",
+        "start": {
+          "x": 685.288,
+          "y": 333.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 333.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "13cc89a5-1928-423b-a2ed-7840e2a240d2",
+        "start": {
+          "x": 685.288,
+          "y": 333.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 333.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "f81c0190-43f0-4213-930b-48514ec2c181",
+        "start": {
+          "x": 685.288,
+          "y": 333.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 333.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "95700a78-381c-48e6-8583-ba875c1cdb00",
+        "start": {
+          "x": 685.288,
+          "y": 325.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 325.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "1c60baca-8e69-464b-8eb5-45c82a5f9f90",
+        "start": {
+          "x": 685.288,
+          "y": 325.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 325.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "d864a0b0-707b-427d-bde4-a86e32508a8b",
+        "start": {
+          "x": 685.288,
+          "y": 317.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 317.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "4d6f658e-c008-46ce-886d-afd1a470a840",
+        "start": {
+          "x": 685.288,
+          "y": 317.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 317.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "dbdd932c-596b-475d-8532-766c315c82b4",
+        "start": {
+          "x": 685.288,
+          "y": 317.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 317.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "3d4e942f-efb9-4edc-9392-1e27a4c04011",
+        "start": {
+          "x": 685.288,
+          "y": 317.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 317.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "14d030c4-3af9-4c93-a82e-9cb2c134f36d",
+        "start": {
+          "x": 158.781,
+          "y": 394.697
+        },
+        "end": {
+          "x": 405.831,
+          "y": 394.697
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "f1e1e69e-ddf2-4c47-8ac0-add54a4d292b",
+        "start": {
+          "x": 127.981,
+          "y": 214.997
+        },
+        "end": {
+          "x": 438.081,
+          "y": 214.997
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "4555a79d-179b-4c46-bcdf-6320efe2f532",
+        "start": {
+          "x": 685.288,
+          "y": 245.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 245.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "68583eba-f406-4de5-9cc3-7eb7ebdf8524",
+        "start": {
+          "x": 685.288,
+          "y": 245.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 245.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "fee47f8d-3887-4565-83df-d9c16b9fa4b9",
+        "start": {
+          "x": 685.288,
+          "y": 245.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 245.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "2b4d3865-ca4c-4405-b4c1-625f29e6f74b",
+        "start": {
+          "x": 685.288,
+          "y": 245.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 245.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "bc78f033-3bff-4a4f-a447-384ee3bcacfa",
+        "start": {
+          "x": 685.288,
+          "y": 481.04
+        },
+        "end": {
+          "x": 685.288,
+          "y": 229.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "659e02ff-bbe6-4199-86f7-f2e952cb3c6a",
+        "start": {
+          "x": 685.288,
+          "y": 481.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 481.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "3658e871-b3c6-4595-bc86-19484ae40b3b",
+        "start": {
+          "x": 704.324,
+          "y": 481.04
+        },
+        "end": {
+          "x": 704.324,
+          "y": 229.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "a0c21447-1113-4d86-abf0-17ae49d12e89",
+        "start": {
+          "x": 804.324,
+          "y": 481.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 229.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "5e5e610a-54ea-4c13-ae97-30081234c6f6",
+        "start": {
+          "x": 121.681,
+          "y": 290.997
+        },
+        "end": {
+          "x": 121.681,
+          "y": 213.597
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "e542a96a-ded6-4340-afb4-80f253090d6c",
+        "start": {
+          "x": 513.188,
+          "y": 226.281
+        },
+        "end": {
+          "x": 442.944,
+          "y": 245.387
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "6edbaf3a-d602-4d90-b719-919409e3ad40",
+        "start": {
+          "x": 513.004,
+          "y": 225.605
+        },
+        "end": {
+          "x": 442.931,
+          "y": 244.665
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "f4d19b6f-c5d6-4f66-b382-ab270e97358d",
+        "start": {
+          "x": 158.781,
+          "y": 394.897
+        },
+        "end": {
+          "x": 405.831,
+          "y": 394.897
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "420d1f87-5a5c-478f-b749-bc0ffad8a9be",
+        "start": {
+          "x": 225.281,
+          "y": 382.497
+        },
+        "end": {
+          "x": 158.781,
+          "y": 382.497
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "076e2e82-04f8-428a-b3a8-07f6f779fe33",
+        "start": {
+          "x": 353.581,
+          "y": 382.497
+        },
+        "end": {
+          "x": 279.781,
+          "y": 382.497
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "38d1332b-96a0-487d-92e3-b0faa43600cf",
+        "start": {
+          "x": 156.783,
+          "y": 195.961
+        },
+        "end": {
+          "x": 156.783,
+          "y": 402.797
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "c0432327-4685-445b-9539-ed74a9eae153",
+        "start": {
+          "x": 189.771,
+          "y": 195.955
+        },
+        "end": {
+          "x": 189.771,
+          "y": 394.897
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "71fc8ee7-94df-4575-bf20-4735eb92f62d",
+        "start": {
+          "x": 254.649,
+          "y": 196.042
+        },
+        "end": {
+          "x": 254.383,
+          "y": 394.897
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "2331e0b3-9fc2-4468-ae8d-315c4bdb9b54",
+        "start": {
+          "x": 316.269,
+          "y": 195.973
+        },
+        "end": {
+          "x": 316.163,
+          "y": 394.897
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "a629cf0e-9d05-4b87-a11d-1c08c837f9c9",
+        "start": {
+          "x": 382.283,
+          "y": 195.947
+        },
+        "end": {
+          "x": 382.283,
+          "y": 394.897
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "a0dacfb3-da06-4ddb-b571-31e07e8dafac",
+        "start": {
+          "x": 408.083,
+          "y": 195.947
+        },
+        "end": {
+          "x": 408.083,
+          "y": 402.797
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "e07b5ada-ae9e-4896-8bde-00ebb6346d97",
+        "start": {
+          "x": 440.583,
+          "y": 195.947
+        },
+        "end": {
+          "x": 440.583,
+          "y": 404.386
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "8aecfa6c-7efe-4e5e-a799-eff533f68777",
+        "start": {
+          "x": 124.433,
+          "y": 195.961
+        },
+        "end": {
+          "x": 124.433,
+          "y": 402.797
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "83e7f4d1-3785-4c79-8378-ff115de514db",
+        "start": {
+          "x": 442.931,
+          "y": 379.047
+        },
+        "end": {
+          "x": 72.358,
+          "y": 379.047
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "1f2759b0-13a0-455a-a4c7-1acb1405b954",
+        "start": {
+          "x": 442.931,
+          "y": 318.597
+        },
+        "end": {
+          "x": 72.489,
+          "y": 318.597
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "e1c69ede-44dc-403c-b24c-bb3ddb411235",
+        "start": {
+          "x": 442.931,
+          "y": 292.847
+        },
+        "end": {
+          "x": 72.489,
+          "y": 292.847
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "b1165110-9c52-458a-8c90-0a39dd2497bd",
+        "start": {
+          "x": 442.931,
+          "y": 231.747
+        },
+        "end": {
+          "x": 72.489,
+          "y": 231.747
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "cc6ec51c-a6ef-4b42-9c5c-4be6aa42fc4c",
+        "start": {
+          "x": 420.216,
+          "y": 447.22
+        },
+        "end": {
+          "x": 647.804,
+          "y": 385.318
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "ad590dcb-a3ff-439f-8a8d-98b4afbed1c0",
+        "start": {
+          "x": 450.081,
+          "y": 229.351
+        },
+        "end": {
+          "x": 522.535,
+          "y": 495.73
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "29e4711d-a40a-4719-9343-8a0a8429eba7",
+        "start": {
+          "x": 434.004,
+          "y": 498.292
+        },
+        "end": {
+          "x": 661.688,
+          "y": 436.363
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "9c8704ce-2324-4d49-92ad-b7f3b6157505",
+        "start": {
+          "x": 507.882,
+          "y": 213.63
+        },
+        "end": {
+          "x": 580.335,
+          "y": 480.009
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "a39662cd-a025-4b80-899e-d9a96f91bdcf",
+        "start": {
+          "x": 565.682,
+          "y": 197.909
+        },
+        "end": {
+          "x": 638.135,
+          "y": 464.287
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "54f6a80a-209a-492c-b98d-08f11c7d87a2",
+        "start": {
+          "x": 440.583,
+          "y": 394.966
+        },
+        "end": {
+          "x": 635.954,
+          "y": 341.75
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "6ead9c66-08a7-46bb-a0eb-a7724c38f980",
+        "start": {
+          "x": 440.583,
+          "y": 376.468
+        },
+        "end": {
+          "x": 631.269,
+          "y": 324.526
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "99704629-d00b-4fc0-be37-6d39d7c5a6dc",
+        "start": {
+          "x": 440.583,
+          "y": 345.154
+        },
+        "end": {
+          "x": 623.356,
+          "y": 295.433
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "293be69a-be66-4267-8b28-e6c6ffbf030e",
+        "start": {
+          "x": 441.487,
+          "y": 314.492
+        },
+        "end": {
+          "x": 615.653,
+          "y": 267.112
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "c976010b-2d91-458c-a03f-435cc0c312ab",
+        "start": {
+          "x": 440.331,
+          "y": 248.17
+        },
+        "end": {
+          "x": 598.777,
+          "y": 205.066
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "a7bcef44-b59e-4491-b197-6d65f31f5538",
+        "start": {
+          "x": 409.066,
+          "y": 402.797
+        },
+        "end": {
+          "x": 440.418,
+          "y": 518.065
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "ad49f7ad-f2a9-45bc-b2e2-7fbd22f4efc6",
+        "start": {
+          "x": 685.288,
+          "y": 237.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 237.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "0d3400a8-00ca-4e8e-ab72-1ac00f92a617",
+        "start": {
+          "x": 685.288,
+          "y": 237.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 237.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "39846df2-54c4-4f91-a4bd-5c5303343c76",
+        "start": {
+          "x": 685.288,
+          "y": 237.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 237.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "2b9f4e34-3c69-45b2-ab3d-73db26f5218b",
+        "start": {
+          "x": 685.288,
+          "y": 237.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 237.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "d949a94e-6b14-46e4-acf9-b39b0b8e8a49",
+        "start": {
+          "x": 685.288,
+          "y": 229.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 229.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "13808041-8895-41fd-8c8e-73f0545f1cc7",
+        "start": {
+          "x": 685.288,
+          "y": 229.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 229.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "6118a70a-ed2b-4dde-9966-f25a208a2330",
+        "start": {
+          "x": 685.288,
+          "y": 229.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 229.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "e9793d26-730e-4c44-ada3-c3f7e510e8b7",
+        "start": {
+          "x": 685.288,
+          "y": 229.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 229.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "382c4a20-e56c-40df-b1b9-d3c3564a6f85",
+        "start": {
+          "x": 685.288,
+          "y": 309.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 309.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "67df9d51-8fe1-4b3c-ae41-f635fc9746ef",
+        "start": {
+          "x": 685.288,
+          "y": 309.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 309.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "6428f86a-3738-4a31-804c-4edc841e1fbc",
+        "start": {
+          "x": 685.288,
+          "y": 309.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 309.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "28a8ebd7-fd04-4bee-adc9-22a2147f9dad",
+        "start": {
+          "x": 685.288,
+          "y": 309.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 309.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "bed42085-2dd4-4070-bc0e-d44685906f14",
+        "start": {
+          "x": 685.288,
+          "y": 301.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 301.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "64625613-73b9-4b44-81d6-955c0923bdc0",
+        "start": {
+          "x": 685.288,
+          "y": 301.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 301.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "485d2da3-81f3-4804-932a-ec1412784822",
+        "start": {
+          "x": 685.288,
+          "y": 301.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 301.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "8d295c7b-06d5-4817-a7e8-d75f89ed3d1d",
+        "start": {
+          "x": 685.288,
+          "y": 301.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 301.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "a7062fa3-8c2c-48b9-9a8a-4a35a21e633a",
+        "start": {
+          "x": 685.288,
+          "y": 293.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 293.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "da617515-f55a-4375-a273-e36bd65be630",
+        "start": {
+          "x": 685.288,
+          "y": 293.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 293.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "f9001138-5138-4257-8684-ec93fcafcc0e",
+        "start": {
+          "x": 685.288,
+          "y": 293.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 293.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "0e16e1e4-c364-4477-9e02-aa1517da83a8",
+        "start": {
+          "x": 685.288,
+          "y": 293.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 293.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "10b60ad1-7578-4974-8eea-674b3cbe105f",
+        "start": {
+          "x": 685.288,
+          "y": 285.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 285.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "004af11c-1fa4-456d-a435-49d3236bc707",
+        "start": {
+          "x": 685.288,
+          "y": 285.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 285.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "b03676e3-d373-4264-957e-39c7e1c9e49c",
+        "start": {
+          "x": 685.288,
+          "y": 285.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 285.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "5dcdb541-21b2-405d-bb0c-296ff3c3626e",
+        "start": {
+          "x": 685.288,
+          "y": 285.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 285.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "50f3dfad-8419-4d5e-9988-513bdd2c0384",
+        "start": {
+          "x": 685.288,
+          "y": 277.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 277.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "81194f4b-c6b0-4343-9e8b-9491055eda9b",
+        "start": {
+          "x": 685.288,
+          "y": 277.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 277.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "b250db3c-a09a-4f19-8938-a0f2765584dd",
+        "start": {
+          "x": 685.288,
+          "y": 277.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 277.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "9d92b971-4289-4af0-aa10-89425d42e4a3",
+        "start": {
+          "x": 685.288,
+          "y": 277.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 277.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "f73fdcb9-de23-425d-a633-5385df30ee42",
+        "start": {
+          "x": 685.288,
+          "y": 269.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 269.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "c2420810-fa62-44e2-b588-92bfdf6e02d5",
+        "start": {
+          "x": 685.288,
+          "y": 269.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 269.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "d57cb174-4772-436f-b175-7574d45299c5",
+        "start": {
+          "x": 685.288,
+          "y": 269.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 269.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "777515f6-213f-4588-b6e4-4ae1e0c19af0",
+        "start": {
+          "x": 685.288,
+          "y": 269.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 269.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "70867a2d-35bb-40da-83fe-26d0ab7b4c6d",
+        "start": {
+          "x": 685.288,
+          "y": 261.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 261.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "5ce86c6e-a44d-4b25-a9df-33636678803a",
+        "start": {
+          "x": 685.288,
+          "y": 261.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 261.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "5bf4cc23-0af6-480e-85ef-6a52d086b1d6",
+        "start": {
+          "x": 685.288,
+          "y": 261.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 261.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "7366107e-0069-4234-8a8a-2ac7f5a1e5cd",
+        "start": {
+          "x": 685.288,
+          "y": 261.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 261.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "84632501-1096-43cf-9dd5-467db63c8074",
+        "start": {
+          "x": 685.288,
+          "y": 253.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 253.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "7037ab48-2889-4363-b940-6b75f273fdaf",
+        "start": {
+          "x": 685.288,
+          "y": 253.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 253.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "bc63f01e-22ee-48a0-8ab7-ae55eeabbb14",
+        "start": {
+          "x": 685.288,
+          "y": 253.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 253.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "9b71bc65-34f6-43a4-adf5-bee9b32ce57b",
+        "start": {
+          "x": 685.288,
+          "y": 253.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 253.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "a000b609-79f1-4816-a953-3f8a0a5abdd2",
+        "start": {
+          "x": 685.288,
+          "y": 245.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 245.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "73bf36fc-7fc9-4940-90ff-028499223554",
+        "start": {
+          "x": 685.288,
+          "y": 245.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 245.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      },
+      {
+        "id": "3aef91dd-f6b2-4d2c-95bc-64e5ba32f582",
+        "start": {
+          "x": 685.288,
+          "y": 245.04
+        },
+        "end": {
+          "x": 804.324,
+          "y": 245.04
+        },
+        "thickness": 0.0,
+        "layer": "ПЛАН",
+        "material": "unknown",
+        "type": "wall"
+      }
+    ],
+    "doors": [],
+    "equipment": [
+      {
+        "id": "94340657-1610-4ca7-86bc-9953a5003aa0",
+        "name": "U4",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U4",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "69ae2419-6256-4098-9390-9dbd6075b6fc",
+        "name": "U5",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U5",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "1f901a30-560c-4a8c-916b-c623652a7201",
+        "name": "U6",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U6",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "0201815f-ead9-4172-904c-af8320f220be",
+        "name": "U7",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U7",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "b076ef18-5102-44e3-95ce-635c1a5a43f0",
+        "name": "U8",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U8",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "f33f55a7-7186-48fa-b8ec-178f1cbe483d",
+        "name": "U9",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U9",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "b821114e-45ed-44d8-90df-4439f6013161",
+        "name": "U10",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U10",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "4f1d3348-50ec-4715-bb2a-0b730cac3f91",
+        "name": "U11",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U11",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "8983ed93-5933-4042-a23e-0cafb721dba1",
+        "name": "U12",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U12",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "5a75bdab-3d53-4262-adda-87301d7c9aef",
+        "name": "U13",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U13",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "ac14e984-8241-47a6-a2ab-abda1cd58cc4",
+        "name": "U14",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U14",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "3b01f1c9-2306-4f49-bb61-784cd4431067",
+        "name": "U15",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U15",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "1d17e282-4ccb-4795-898b-0fe26268700c",
+        "name": "U16",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U16",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "69a2aef9-a58a-4fba-b271-cc2f60ac890d",
+        "name": "U17",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U17",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "8921b0e1-afa5-4b2e-b331-a9ec4aa93b86",
+        "name": "U18",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U18",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "c36ad162-c910-4ae1-974f-4e64c47853cb",
+        "name": "U19",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U19",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "2288869c-9d12-438e-b438-ae7ba0adf9c1",
+        "name": "U20",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U20",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "9778d5bb-fc35-4b89-9c02-e245843f0898",
+        "name": "U21",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U21",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "7505f9cb-5be2-488e-bf61-311a295d6208",
+        "name": "U22",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U22",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "293c60cb-eb8c-4c27-afc2-4008cd3aad02",
+        "name": "U23",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U23",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "5dcd27d6-0b53-4764-806f-ebfc88008d7c",
+        "name": "U24",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U24",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "fa2c5ddf-770a-422d-b133-748ecd183a3a",
+        "name": "U25",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U25",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "995ec9bd-18b3-4ba5-84a1-17f3692118a4",
+        "name": "U26",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U26",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "0a4202b1-c648-4714-9f6d-640e49a38dc6",
+        "name": "U27",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U27",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "e67e2df9-9085-4d9a-ab00-77575d474e99",
+        "name": "U28",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U28",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "b22a0e5c-fdeb-4da8-a64e-a8704682d23f",
+        "name": "U29",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U29",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "d5358b3c-da7c-481f-b5b5-243a192b1c6d",
+        "name": "U30",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U30",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "f7fe6ebb-6787-4431-9a38-5b6de5c8083d",
+        "name": "U31",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U31",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "9ce69dae-8c6b-4c57-a624-d5e00d7cd5c8",
+        "name": "U32",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U32",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "20d55c4a-1d88-48f7-90eb-498a7b89664b",
+        "name": "U33",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U33",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "3e2e8634-6e6c-44a7-95e6-2eebaaa867ba",
+        "name": "U34",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U34",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "43d10223-67b0-4fac-8f00-210cf8ca58a7",
+        "name": "U35",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U35",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "a12d5eb5-5b39-4b55-be0b-3371b68b81ea",
+        "name": "U36",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U36",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "1e07d55c-847e-4139-a8a8-08b7262ade05",
+        "name": "U37",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U37",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "4048b7b0-937b-4f86-bf46-c8cd68bfb389",
+        "name": "U38",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U38",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "891c4b68-2153-4793-b0d8-16c4a06e7a6f",
+        "name": "U39",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U39",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "ba0c0670-0916-4dbf-9f42-ca8bd795e8f2",
+        "name": "U40",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U40",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "8be812a8-aa39-47ed-9376-9ff530706c6d",
+        "name": "U41",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U41",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "d254e07c-a377-469d-9235-9821c4dac2f5",
+        "name": "U42",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U42",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "1bce0027-7ecd-4761-89f0-22a8bde74fa6",
+        "name": "U43",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U43",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "588a9d72-a89c-4f9e-8d8c-a805759e97fd",
+        "name": "U44",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U44",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "d0be3d7f-93a9-4960-aaaa-910190f24764",
+        "name": "U45",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U45",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "ca54f8bb-64da-4838-8925-c544bc8399e2",
+        "name": "U46",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U46",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "8ff37f08-854e-43b3-9b1a-11295751cd54",
+        "name": "U47",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U47",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "855abb8b-a0bf-41f5-98c1-196aad31d003",
+        "name": "U48",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U48",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "f70f462d-99ac-4f69-b605-c325038cdfb5",
+        "name": "U49",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U49",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "9f5679a5-f34d-4e75-b207-80537c4485e5",
+        "name": "U50",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U50",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "099cd0a5-e097-405a-bfd1-2d1ba864a180",
+        "name": "U51",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U51",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "a43c78ad-7c14-4edc-a99f-a1a547580877",
+        "name": "U52",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U52",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "b158ed29-a75d-4fa4-8117-3e1294e7a49e",
+        "name": "U53",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U53",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "037be632-29ac-4abd-b551-db195716f0e6",
+        "name": "U154",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U154",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "12cae9c4-5b49-4e54-bf1e-ab2ffe49a8e3",
+        "name": "U155",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U155",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "2d30f513-02e0-4214-a35c-787dfd6749f1",
+        "name": "U156",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U156",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "0aabfc46-9334-463e-a67d-3b551565514f",
+        "name": "U157",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U157",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "aa6ee109-4e29-4b7f-b4dc-a03e45858f6c",
+        "name": "U158",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U158",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "013eef3a-46a4-4497-bec4-767a0e38291c",
+        "name": "U159",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U159",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "c798445c-b3cb-4683-9416-9a20b75ccb7f",
+        "name": "U160",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U160",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "d59c31ea-0a1e-4583-83ca-8d24b4821a18",
+        "name": "U161",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U161",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "84aeaf71-465b-4534-9471-d622770994e7",
+        "name": "U162",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U162",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "82954598-ee90-41d2-9ca0-64334686361d",
+        "name": "U163",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U163",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "7ea17cf5-6c63-4bee-a7f3-7c348fed9f1c",
+        "name": "U164",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U164",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "dc055cd7-266c-4c59-8a58-5ad27458eb82",
+        "name": "U165",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U165",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "7a0e1844-0d4d-44cf-9e58-690b60cc137e",
+        "name": "U166",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U166",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "abb32b54-a4db-4b81-9256-420affcf9643",
+        "name": "U167",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U167",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "10a9014b-a4ce-4c10-9c76-49e3f510af6d",
+        "name": "U168",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U168",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "e8cf3657-cc69-4b56-a8e3-a3dbf483c854",
+        "name": "U169",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U169",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "002795a8-eb7c-4eb3-98a2-3676289828c3",
+        "name": "U170",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U170",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "e0ef7822-d41d-42ed-ba7b-023e755e124d",
+        "name": "U171",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U171",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "065cac03-e053-4159-ba1c-ac1d1b46dc08",
+        "name": "U172",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U172",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "960c94c6-51a9-4d3e-9bbe-d4a3ae41a1a5",
+        "name": "U173",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U173",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "3d0d5775-901b-48bc-aeff-34395ba181b6",
+        "name": "U174",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U174",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "22fadcdd-51d3-46af-aed1-7ce389ae2e3b",
+        "name": "U175",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U175",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "f7853dfd-5f55-488f-9851-b6ea8ef1b044",
+        "name": "U176",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U176",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "4389bd46-d3a5-4b12-b304-68111fe4b816",
+        "name": "U177",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U177",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "71758da3-29ec-44e5-9458-9bfaf5847453",
+        "name": "U178",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U178",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "cdb65a53-dd4a-48b8-a906-57bcfacf630e",
+        "name": "U179",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U179",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "7029fec3-2cae-405f-82f6-7daa80ee9e6f",
+        "name": "U180",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U180",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "bda2b40f-6752-4cb9-8704-1db72f4860a9",
+        "name": "U181",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U181",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "57024613-79f3-4527-bbc7-46afdde6b55c",
+        "name": "U182",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U182",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "aa01feba-2f44-426f-84e0-f8e2cdbf77d0",
+        "name": "U183",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U183",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "497cb686-1b06-4438-9b13-10370baf2c6a",
+        "name": "U184",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U184",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "4ca6075b-1d1a-408b-9201-f6b854991ce5",
+        "name": "U185",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U185",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "933b23fa-a72a-4f50-a717-a63b3b15b93b",
+        "name": "U186",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U186",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "6d05c0b2-6a9d-417b-843e-2f2bcd51831f",
+        "name": "U187",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U187",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "a1f0b23a-9f66-4f5f-85c1-86becb4aaa6b",
+        "name": "U188",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U188",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "65ef11f4-ee5c-4409-8987-99e9e50b01d5",
+        "name": "U189",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U189",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "75e43b67-2ac1-4dfe-b810-d826b9f235f6",
+        "name": "U190",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U190",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "157daac0-99bd-40ad-9f99-a9fcb372bebf",
+        "name": "U191",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U191",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "7ca3f9f2-0c1c-46f3-87f7-6ebd98c79f87",
+        "name": "U192",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U192",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "5cc36a46-b549-42fd-b8c2-163bdda9b6a7",
+        "name": "U193",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U193",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "bccce802-450d-48c2-b024-98b0dee8cc04",
+        "name": "U194",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U194",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "41b63ff3-1cba-49cf-aedb-9031975ba1c6",
+        "name": "U195",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U195",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "50bb7a48-7d8e-4ee1-a8d6-2aa88c696c50",
+        "name": "U196",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U196",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "d5eedf83-0d22-4e80-9ac3-caf41726d6c5",
+        "name": "U197",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U197",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "617c4c3b-841a-48ea-9b03-d8c98babaac1",
+        "name": "U198",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U198",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "0ebb95b4-c6a7-49fe-b1a7-23ae3351f972",
+        "name": "U199",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U199",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "e72429ef-a985-4a7e-b7f5-6d56692e3e1c",
+        "name": "U200",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U200",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "10a30396-d85d-4969-8a49-2b169c53b7bb",
+        "name": "U201",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U201",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "2eae32fa-b804-405e-a6e1-76b6ee1f6378",
+        "name": "U202",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U202",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "40fb6244-afcd-4087-a107-c4329ba43c9e",
+        "name": "U203",
+        "type": "unknown",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "layer": "ОБОРУДОВАНИЕ",
+        "block_name": "U203",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "a0502e38-f405-4a36-80d9-2f7b1f0c8a3b",
+        "name": "A$C32553833",
+        "type": "camera",
+        "position": {
+          "x": 100.886,
+          "y": 303.061
+        },
+        "layer": "СОТ",
+        "block_name": "A$C32553833",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "8acf4a27-b99a-4d9e-a73e-c49801ac9a79",
+        "name": "A$C32553833",
+        "type": "camera",
+        "position": {
+          "x": 413.043,
+          "y": 320.781
+        },
+        "layer": "СОТ",
+        "block_name": "A$C32553833",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "06598554-861e-4759-bb10-ee0e7c3cd453",
+        "name": "A$C32553833",
+        "type": "camera",
+        "position": {
+          "x": 151.427,
+          "y": 320.684
+        },
+        "layer": "СОТ",
+        "block_name": "A$C32553833",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "10230009-6b62-4189-8530-58054fb32723",
+        "name": "A$C32553833",
+        "type": "camera",
+        "position": {
+          "x": 496.115,
+          "y": 441.257
+        },
+        "layer": "СОТ",
+        "block_name": "A$C32553833",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "6e66e0d8-a0e5-48ba-8546-75397eaa295d",
+        "name": "A$C32553833",
+        "type": "camera",
+        "position": {
+          "x": 445.555,
+          "y": 244.677
+        },
+        "layer": "СОТ",
+        "block_name": "A$C32553833",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "da3d4011-1e2f-4f76-948b-bfd56545eab8",
+        "name": "A$C32553833",
+        "type": "camera",
+        "position": {
+          "x": 570.884,
+          "y": 215.463
+        },
+        "layer": "СОТ",
+        "block_name": "A$C32553833",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "5ed7f7d5-c849-45fe-8bc4-e7388135a768",
+        "name": "A$C32553833",
+        "type": "camera",
+        "position": {
+          "x": 603.34,
+          "y": 454.319
+        },
+        "layer": "СОТ",
+        "block_name": "A$C32553833",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "47268352-d7dd-489e-ae59-677cd9bcdb6e",
+        "name": "*U386",
+        "type": "fire_sensor",
+        "position": {
+          "x": 444.21,
+          "y": 401.419
+        },
+        "layer": "FIRE_ALARM",
+        "block_name": "*U386",
+        "attributes": {},
+        "category": "equipment"
+      },
+      {
+        "id": "e3acb32f-aeec-4922-9b5d-61a561ae161f",
+        "name": "*U385",
+        "type": "fire_sensor",
+        "position": {
+          "x": 435.613,
+          "y": 377.097
+        },
+        "layer": "FIRE_ALARM",
+        "block_name": "*U385",
+        "attributes": {},
+        "category": "equipment"
+      }
+    ],
+    "cable_routes": [
+      {
+        "id": "f3878b9e-fa0b-4326-8082-edcaa1ececd9",
+        "points": [
+          {
+            "x": 138.589,
+            "y": 307.595
+          },
+          {
+            "x": 126.286,
+            "y": 307.595
+          }
+        ],
+        "layer": "SOZP",
+        "cable_type": "data",
+        "length": 12.3,
+        "category": "cable_route"
+      },
+      {
+        "id": "8676ebcb-fe6e-4de9-adcb-81e0d0ba09f4",
+        "points": [
+          {
+            "x": 152.162,
+            "y": 310.272
+          },
+          {
+            "x": 139.859,
+            "y": 310.272
+          }
+        ],
+        "layer": "SOZP",
+        "cable_type": "data",
+        "length": 12.3,
+        "category": "cable_route"
+      },
+      {
+        "id": "027cf50d-9b46-4534-8216-854cc51c3ac2",
+        "points": [
+          {
+            "x": 424.611,
+            "y": 309.568
+          },
+          {
+            "x": 412.308,
+            "y": 309.568
+          }
+        ],
+        "layer": "SOZP",
+        "cable_type": "data",
+        "length": 12.3,
+        "category": "cable_route"
+      },
+      {
+        "id": "1dc4814e-7341-4af1-a803-16a69feccbf8",
+        "points": [
+          {
+            "x": 483.094,
+            "y": 244.307
+          },
+          {
+            "x": 470.792,
+            "y": 244.307
+          }
+        ],
+        "layer": "SOZP",
+        "cable_type": "data",
+        "length": 12.3,
+        "category": "cable_route"
+      },
+      {
+        "id": "07b86b7f-53f8-43a4-97a6-93c47f10f1df",
+        "points": [
+          {
+            "x": 546.313,
+            "y": 227.109
+          },
+          {
+            "x": 534.01,
+            "y": 227.109
+          }
+        ],
+        "layer": "SOZP",
+        "cable_type": "data",
+        "length": 12.3,
+        "category": "cable_route"
+      },
+      {
+        "id": "0617c3c7-3e17-4c10-90e5-3bb426410449",
+        "points": [
+          {
+            "x": 566.107,
+            "y": 446.913
+          },
+          {
+            "x": 553.804,
+            "y": 446.913
+          }
+        ],
+        "layer": "SOZP",
+        "cable_type": "data",
+        "length": 12.3,
+        "category": "cable_route"
+      },
+      {
+        "id": "860d28c2-5dd7-4c09-ac15-1c4439d05dbc",
+        "points": [
+          {
+            "x": 496.445,
+            "y": 420.409
+          },
+          {
+            "x": 484.142,
+            "y": 420.409
+          }
+        ],
+        "layer": "SOZP",
+        "cable_type": "data",
+        "length": 12.3,
+        "category": "cable_route"
+      },
+      {
+        "id": "e96d44a1-50b5-4f9f-952c-1bdaa3015d3a",
+        "points": [
+          {
+            "x": 464.666,
+            "y": 409.257
+          },
+          {
+            "x": 484.226,
+            "y": 409.257
+          }
+        ],
+        "layer": "_FIRE_ALARM_LINE",
+        "cable_type": "data",
+        "length": 19.56,
+        "category": "cable_route"
+      },
+      {
+        "id": "d2765a98-cb81-4395-829f-b7c0707a3584",
+        "points": [
+          {
+            "x": 464.666,
+            "y": 409.257
+          },
+          {
+            "x": 450.935,
+            "y": 394.709
+          }
+        ],
+        "layer": "_FIRE_ALARM_LINE",
+        "cable_type": "data",
+        "length": 20.0,
+        "category": "cable_route"
+      },
+      {
+        "id": "76cc9c06-8c5c-49a0-980c-7dc62d23e2da",
+        "points": [
+          {
+            "x": 389.197,
+            "y": 406.137
+          },
+          {
+            "x": 408.757,
+            "y": 406.137
+          }
+        ],
+        "layer": "_FIRE_ALARM_LINE",
+        "cable_type": "data",
+        "length": 19.56,
+        "category": "cable_route"
+      },
+      {
+        "id": "4a5efbc1-1452-4723-839d-130eca4a7f94",
+        "points": [
+          {
+            "x": 408.757,
+            "y": 406.137
+          },
+          {
+            "x": 428.888,
+            "y": 383.807
+          }
+        ],
+        "layer": "_FIRE_ALARM_LINE",
+        "cable_type": "data",
+        "length": 30.06,
+        "category": "cable_route"
+      }
+    ],
+    "rooms": []
+  }
+}

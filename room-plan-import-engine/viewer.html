@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровая модель объекта - План этажа</title>
+    <style>
+        body { margin: 0; overflow: hidden; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f0f0; }
+        #canvas-container { width: 100vw; height: 100vh; position: relative; }
+        canvas { display: block; cursor: grab; }
+        canvas:active { cursor: grabbing; }
+        
+        /* Панель управления */
+        #controls {
+            position: absolute; top: 20px; left: 20px; background: rgba(255, 255, 255, 0.95);
+            padding: 15px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            max-width: 300px; z-index: 1000;
+        }
+        h2 { margin: 0 0 15px 0; font-size: 18px; color: #333; border-bottom: 2px solid #007bff; padding-bottom: 5px; }
+        .layer-control { display: flex; align-items: center; margin-bottom: 10px; cursor: pointer; }
+        .layer-control input { margin-right: 10px; transform: scale(1.2); }
+        .color-box { width: 16px; height: 16px; border-radius: 3px; margin-right: 8px; border: 1px solid #ccc; }
+        
+        /* Всплывающее окно */
+        #tooltip {
+            position: absolute; background: rgba(0, 0, 0, 0.85); color: #fff;
+            padding: 12px; border-radius: 6px; font-size: 14px; pointer-events: none;
+            display: none; z-index: 2000; max-width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            backdrop-filter: blur(4px);
+        }
+        #tooltip h3 { margin: 0 0 5px 0; font-size: 16px; color: #4da3ff; }
+        #tooltip p { margin: 3px 0; color: #ddd; }
+        .label-badge { display: inline-block; background: #444; padding: 2px 6px; border-radius: 4px; font-size: 11px; margin-top: 5px; color: #aaa; }
+
+        /* Загрузчик */
+        #loader {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            font-size: 20px; color: #555; background: rgba(255,255,255,0.9);
+            padding: 20px 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            z-index: 3000;
+        }
+        .error-msg { color: #d9534f; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div id="controls">
+    <h2>Слои системы</h2>
+    <label class="layer-control">
+        <div class="color-box" style="background: #333;"></div>
+        <input type="checkbox" id="toggle-walls" checked> Архитектура (Стены)
+    </label>
+    <label class="layer-control">
+        <div class="color-box" style="background: #8B4513;"></div>
+        <input type="checkbox" id="toggle-doors" checked> Двери
+    </label>
+    <label class="layer-control">
+        <div class="color-box" style="background: #007bff;"></div>
+        <input type="checkbox" id="toggle-equipment-cctv" checked> Видеонаблюдение (СОТ)
+    </label>
+    <label class="layer-control">
+        <div class="color-box" style="background: #dc3545;"></div>
+        <input type="checkbox" id="toggle-equipment-fire" checked> Пожарная сигнализация
+    </label>
+    <label class="layer-control">
+        <div class="color-box" style="background: #28a745;"></div>
+        <input type="checkbox" id="toggle-routes" checked> Кабельные трассы
+    </label>
+    <div style="margin-top: 15px; font-size: 12px; color: #666;">
+        🖱 Колесо: Зум<br>
+        ✋ Драг: Перемещение<br>
+        👆 Клик: Информация
+    </div>
+</div>
+
+<div id="tooltip"></div>
+<div id="loader">Загрузка цифровой модели...</div>
+<div id="canvas-container">
+    <canvas id="planCanvas"></canvas>
+</div>
+
+<script>
+    // --- КОНФИГУРАЦИЯ И ДАННЫЕ ---
+    const CONFIG = {
+        colors: {
+            walls: '#333333',
+            doors: '#8B4513',
+            cctv: '#007bff',      // Синий
+            fire: '#dc3545',      // Красный
+            audio: '#ffc107',     // Желтый
+            routes: '#28a745',    // Зеленый
+            rooms: 'rgba(0, 123, 255, 0.03)'
+        },
+        iconRadius: 6,
+        lineWidth: 2
+    };
+
+    let projectData = null;
+    let scale = 1.0;
+    let offsetX = 0;
+    let offsetY = 0;
+    let isDragging = false;
+    let lastX = 0;
+    let lastY = 0;
+
+    const canvas = document.getElementById('planCanvas');
+    const ctx = canvas.getContext('2d');
+    const tooltip = document.getElementById('tooltip');
+    const loader = document.getElementById('loader');
+
+    // --- ЗАГРУЗКА ДАННЫХ ---
+    async function loadData() {
+        try {
+            // Пытаемся загрузить внешний файл
+            const response = await fetch('output/project_model.json');
+            if (!response.ok) throw new Error("Файл модели не найден");
+            projectData = await response.json();
+            initViewer();
+        } catch (err) {
+            console.warn("Не удалось загрузить внешний JSON. Используем демо-данные или проверьте путь.", err);
+            loader.innerHTML = "<span class='error-msg'>Ошибка загрузки JSON.<br>Убедитесь, что viewer.html и папка output лежат рядом.<br><br>Или запустите локальный сервер:<br>python -m http.server</span>";
+            // Для демонстрации можно раскомментировать ниже встроенные данные, если файл не найден
+            // createDemoData(); 
+            // initViewer();
+        }
+    }
+
+    // --- ИНИЦИАЛИЗАЦИЯ ---
+    function initViewer() {
+        if (!projectData || !projectData.walls) {
+            loader.innerHTML = "Нет данных для отображения.";
+            return;
+        }
+
+        resizeCanvas();
+        calculateBounds();
+        
+        // Центрирование
+        offsetX = canvas.width / 2 - (bounds.minX + bounds.maxX) / 2 * scale;
+        offsetY = canvas.height / 2 + (bounds.minY + bounds.maxY) / 2 * scale; // Y инвертирован
+
+        loader.style.display = 'none';
+        draw();
+    }
+
+    let bounds = { minX: 0, maxX: 0, minY: 0, maxY: 0 };
+
+    function calculateBounds() {
+        let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+        
+        const extend = (x, y) => {
+            if (x < minX) minX = x; if (x > maxX) maxX = x;
+            if (y < minY) minY = y; if (y > maxY) maxY = y;
+        };
+
+        if (projectData.walls) {
+            projectData.walls.forEach(w => {
+                if(w.points) w.points.forEach(p => extend(p[0], p[1]));
+            });
+        }
+        // Добавляем отступ
+        const padding = 1000;
+        bounds = { minX: minX - padding, maxX: maxX + padding, minY: minY - padding, maxY: maxY + padding };
+        
+        // Авто-масштаб
+        const scaleX = canvas.width / (bounds.maxX - bounds.minX);
+        const scaleY = canvas.height / (bounds.maxY - bounds.minY);
+        scale = Math.min(scaleX, scaleY) * 0.9;
+    }
+
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', () => { resizeCanvas(); draw(); });
+
+    // --- ОТРИСОВКА ---
+    function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        ctx.save();
+        ctx.translate(offsetX, offsetY);
+        ctx.scale(scale, -scale); // Инвертируем Y для соответствия CAD
+
+        // Сетка (опционально)
+        drawGrid();
+
+        // Слои
+        if (document.getElementById('toggle-walls').checked) drawWalls();
+        if (document.getElementById('toggle-doors').checked) drawDoors();
+        if (document.getElementById('toggle-routes').checked) drawRoutes();
+        if (document.getElementById('toggle-equipment-cctv').checked) drawEquipment('cctv');
+        if (document.getElementById('toggle-equipment-fire').checked) drawEquipment('fire');
+
+        ctx.restore();
+    }
+
+    function drawGrid() {
+        ctx.strokeStyle = '#e0e0e0';
+        ctx.lineWidth = 0.5 / scale;
+        const step = 1000;
+        // Упрощенная сетка для фона
+    }
+
+    function drawWalls() {
+        if (!projectData.walls) return;
+        ctx.strokeStyle = CONFIG.colors.walls;
+        ctx.lineWidth = 3 / scale;
+        ctx.lineCap = 'round';
+        
+        ctx.beginPath();
+        projectData.walls.forEach(wall => {
+            if (wall.points && wall.points.length > 1) {
+                ctx.moveTo(wall.points[0][0], wall.points[0][1]);
+                for (let i = 1; i < wall.points.length; i++) {
+                    ctx.lineTo(wall.points[i][0], wall.points[i][1]);
+                }
+            }
+        });
+        ctx.stroke();
+    }
+
+    function drawDoors() {
+        if (!projectData.doors || projectData.doors.length === 0) return;
+        ctx.strokeStyle = CONFIG.colors.doors;
+        ctx.lineWidth = 2 / scale;
+        
+        projectData.doors.forEach(door => {
+            ctx.beginPath();
+            if (door.arc) {
+                // Рисуем дугу двери
+                ctx.arc(door.arc.center[0], door.arc.center[1], door.arc.radius, door.arc.startAngle, door.arc.endAngle);
+            } else if (door.points) {
+                ctx.moveTo(door.points[0][0], door.points[0][1]);
+                ctx.lineTo(door.points[1][0], door.points[1][1]);
+            }
+            ctx.stroke();
+        });
+    }
+
+    function drawRoutes() {
+        if (!projectData.cable_routes) return;
+        ctx.strokeStyle = CONFIG.colors.routes;
+        ctx.lineWidth = 1.5 / scale;
+        ctx.setLineDash([5, 5]); // Пунктир
+
+        projectData.cable_routes.forEach(route => {
+            if (route.points && route.points.length > 1) {
+                ctx.beginPath();
+                ctx.moveTo(route.points[0][0], route.points[0][1]);
+                for (let i = 1; i < route.points.length; i++) {
+                    ctx.lineTo(route.points[i][0], route.points[i][1]);
+                }
+                ctx.stroke();
+            }
+        });
+        ctx.setLineDash([]);
+    }
+
+    function drawEquipment(filterType) {
+        if (!projectData.equipment) return;
+        
+        projectData.equipment.forEach(eq => {
+            // Фильтрация по типу (упрощенно по названию слоя или имени)
+            const name = (eq.name || "").toLowerCase();
+            const layer = (eq.layer || "").toLowerCase();
+            let isMatch = false;
+
+            if (filterType === 'cctv' && (layer.includes('сот') || layer.includes('video') || name.includes('камер'))) isMatch = true;
+            if (filterType === 'fire' && (layer.includes('fire') || layer.includes('пожар') || name.includes('датчик') || name.includes('сирен'))) isMatch = true;
+
+            if (!isMatch) return;
+
+            const x = eq.position ? eq.position[0] : (eq.geometry && eq.geometry[0] ? eq.geometry[0][0] : 0);
+            const y = eq.position ? eq.position[1] : (eq.geometry && eq.geometry[0] ? eq.geometry[0][1] : 0);
+
+            if (!x || !y) return;
+
+            // Рисуем значок
+            ctx.fillStyle = filterType === 'cctv' ? CONFIG.colors.cctv : CONFIG.colors.fire;
+            ctx.beginPath();
+            ctx.arc(x, y, CONFIG.iconRadius / scale, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Обводка
+            ctx.strokeStyle = '#fff';
+            ctx.lineWidth = 1 / scale;
+            ctx.stroke();
+        });
+    }
+
+    // --- ВЗАИМОДЕЙСТВИЕ ---
+    canvas.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        const zoomSensitivity = 0.001;
+        const delta = -e.deltaY * zoomSensitivity;
+        const newScale = scale * (1 + delta);
+        
+        if (newScale > 0.1 && newScale < 10) {
+            // Зум к курсору
+            const rect = canvas.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left;
+            const mouseY = e.clientY - rect.top;
+            
+            const worldX = (mouseX - offsetX) / scale;
+            const worldY = (mouseY - offsetY) / (-scale); // Инверсия Y
+
+            offsetX = mouseX - worldX * newScale;
+            offsetY = mouseY - worldY * (-newScale);
+            scale = newScale;
+            draw();
+        }
+    });
+
+    canvas.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        lastX = e.clientX;
+        lastY = e.clientY;
+        canvas.style.cursor = 'grabbing';
+    });
+
+    canvas.addEventListener('mousemove', (e) => {
+        if (isDragging) {
+            const dx = e.clientX - lastX;
+            const dy = e.clientY - lastY;
+            offsetX += dx;
+            offsetY += dy;
+            lastX = e.clientX;
+            lastY = e.clientY;
+            draw();
+        } else {
+            // Ховер эффект для тултипа
+            handleHover(e);
+        }
+    });
+
+    canvas.addEventListener('mouseup', () => {
+        isDragging = false;
+        canvas.style.cursor = 'grab';
+    });
+    
+    canvas.addEventListener('mouseleave', () => {
+        isDragging = false;
+        tooltip.style.display = 'none';
+    });
+
+    function handleHover(e) {
+        const rect = canvas.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+        
+        // Преобразуем координаты экрана в мировые
+        const worldX = (mouseX - offsetX) / scale;
+        const worldY = (mouseY - offsetY) / (-scale);
+
+        let found = null;
+        const hitRadius = 15 / scale; // Радиус попадания
+
+        // Проверка оборудования
+        if (projectData.equipment) {
+            for (let eq of projectData.equipment) {
+                const x = eq.position ? eq.position[0] : (eq.geometry && eq.geometry[0] ? eq.geometry[0][0] : 0);
+                const y = eq.position ? eq.position[1] : (eq.geometry && eq.geometry[0] ? eq.geometry[0][1] : 0);
+                if (!x || !y) continue;
+
+                const dist = Math.sqrt((x - worldX)**2 + (y - worldY)**2);
+                if (dist < hitRadius) {
+                    found = { type: 'equipment', data: eq };
+                    break;
+                }
+            }
+        }
+
+        if (found) {
+            showTooltip(e.clientX, e.clientY, found.data);
+            canvas.style.cursor = 'pointer';
+        } else {
+            tooltip.style.display = 'none';
+            canvas.style.cursor = 'grab';
+        }
+    }
+
+    function showTooltip(x, y, data) {
+        tooltip.style.display = 'block';
+        tooltip.style.left = (x + 15) + 'px';
+        tooltip.style.top = (y + 15) + 'px';
+        
+        const name = data.name || "Объект";
+        const layer = data.layer || "Слой не указан";
+        const type = data.type || "Оборудование";
+        
+        tooltip.innerHTML = `
+            <h3>${name}</h3>
+            <p><strong>Тип:</strong> ${type}</p>
+            <p><strong>Слой:</strong> ${layer}</p>
+            ${data.comment ? `<p><em>${data.comment}</em></p>` : ''}
+            <div class="label-badge">ID: ${data.id || '?'}</div>
+        `;
+    }
+
+    // Слушатели чекбоксов
+    ['toggle-walls', 'toggle-doors', 'toggle-equipment-cctv', 'toggle-equipment-fire', 'toggle-routes'].forEach(id => {
+        document.getElementById(id).addEventListener('change', draw);
+    });
+
+    // Старт
+    loadData();
+
+</script>
+</body>
+</html>

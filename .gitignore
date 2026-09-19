@@ -1,6 +1,52 @@
-*.log*
-*.xlsx
-*.dwg
-*.dxf
+```
+# Python
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Compressed files
+*.zip
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# Dependencies
+.venv/
+venv/
+node_modules/
+
+# Build artifacts
+dist/
+build/
+target/
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# MyPy
+.mypy_cache/
+
+# Pytest
 .pytest_cache/
+```
